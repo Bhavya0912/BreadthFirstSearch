@@ -175,6 +175,12 @@ r2 = RouteProblem('Velachery', 'Singaperumal Kovil', map=saveetha_nearby_locatio
 r3 = RouteProblem('Sriperumabadur', 'Mudichur', map=saveetha_nearby_locations)
 r4 = RouteProblem('Chengalpattu', 'Enathur', map=saveetha_nearby_locations)
 
+print(r0)
+print(r1)
+print(r2)
+print(r3)
+print(r4)
+
 goal_state_path=breadth_first_search(r0)
 path_states(goal_state_path)
 print("GoalStateWithPath:{0}".format(goal_state_path))
@@ -183,11 +189,28 @@ goal_state_path=breadth_first_search(r1)
 path_states(goal_state_path)
 print("GoalStateWithPath:{0}".format(goal_state_path))
 print("Total Distance={0} Kilometers".format(goal_state_path.path_cost))
+goal_state_path=breadth_first_search(r2)
+path_states(goal_state_path)
+print("GoalStateWithPath:{0}".format(goal_state_path))
+print("Total Distance={0} Kilometers".format(goal_state_path.path_cost))
+goal_state_path=breadth_first_search(r3)
+path_states(goal_state_path)
+print("GoalStateWithPath:{0}".format(goal_state_path))
+print("Total Distance={0} Kilometers".format(goal_state_path.path_cost))
+goal_state_path=breadth_first_search(r4)
+path_states(goal_state_path)
+print("GoalStateWithPath:{0}".format(goal_state_path))
+print("Total Distance={0} Kilometers".format(goal_state_path.path_cost))
 
 ```
 
 ## OUTPUT:
-![image](https://user-images.githubusercontent.com/75235293/166148964-e67a0f84-44ff-46bb-a911-6b3326d23b8a.png)
+![image](https://user-images.githubusercontent.com/75235293/167289508-f1644c82-8d6e-4e74-bd66-0172eeed0f68.png)
+![image](https://user-images.githubusercontent.com/75235293/167289525-ac79306c-0512-4661-89f2-bc924f96e708.png)
+![image](https://user-images.githubusercontent.com/75235293/167289530-fb9ab2b7-f6ff-4a6a-a8e1-71bf73194a47.png)
+![image](https://user-images.githubusercontent.com/75235293/167289572-daaa4113-d55c-4339-a8fa-53bf6d2af957.png)
+![image](https://user-images.githubusercontent.com/75235293/167289583-2b07569c-f82f-4969-93f2-b81e40051e52.png)
+![image](https://user-images.githubusercontent.com/75235293/167289595-a988ccbd-300b-46c6-af5f-f0898e00b629.png)
 
 
 
